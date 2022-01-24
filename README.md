@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Just a toy app to show how GraphQL::DataLoader` works.
 
-Things you may want to cover:
+## To run
 
-* Ruby version
+This uses Postgres for the database.
 
-* System dependencies
+```sh
+bin/rails db:create db:schema:load
+bin/rails db:seed
 
-* Configuration
+bin/rails server
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The GraphQL endpoint is exposed at `POST /graphql`
